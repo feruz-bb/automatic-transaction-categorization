@@ -1,0 +1,11 @@
+true,predicted,count
+Shopping,Healthcare,5
+Shopping,Groceries,4
+Healthcare,Groceries,3
+Subscription,Groceries,2
+Shopping,Subscription,2
+Shopping,Personal Care,2
+Healthcare,Shopping,2
+Restaurants,Subscription,1
+Shopping,Transfer,1
+Restaurants,Transfer,1

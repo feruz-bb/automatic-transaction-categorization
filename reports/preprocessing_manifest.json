@@ -1,0 +1,20 @@
+{
+  "dataset": "DoDataThings/us-bank-transaction-categories-v2",
+  "unit_of_analysis": "one bank transaction description",
+  "target": "category",
+  "n_classes": 17,
+  "rows_after_clean": 45692,
+  "split_counts": {
+    "train": 31984,
+    "valid": 6854,
+    "test": 6854
+  },
+  "split_strategy": "stratified by category on unique descriptions",
+  "random_state": 42,
+  "text_normalizer": "src.features.normalize_description (deterministic, stateless)",
+  "fit_boundary": "All learned transformations (TF-IDF vocabulary, label encoding, model parameters) are fitted on the TRAIN split only. Valid and test are only transformed. Text normalization is stateless and therefore leakage-safe.",
+  "leakage_controls": [
+    "De-duplicated to one row per unique description BEFORE splitting, so no identical string can appear in both train and test.",
+    "Identifier tokens (store numbers, ZIPs, PPD/reference IDs) replaced with <num> so the model cannot key on per-transaction random codes."
+  ]
+}

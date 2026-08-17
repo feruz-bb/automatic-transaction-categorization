@@ -1,0 +1,16 @@
+FIN-001 reload proof
+============================================================
+Loaded: transaction_categorizer.joblib
+Model version: 1.0.0  |  test macro-F1: 0.9961
+No .fit() is called after load; predictions use the pickled pipeline as-is.
+------------------------------------------------------------
+[debit] PUBLIX 7860 UNIVERSITY LN OAKLAND CA
+   -> Groceries  (confidence 0.905, uncertain=False)
+[debit] MTG PMT PENFED CU
+   -> Mortgage  (confidence 0.974, uncertain=False)
+[credit] US GOVERNMENT DIR DEP PPD ID: 547185326
+   -> Income  (confidence 0.993, uncertain=False)
+[debit] APPLE TV+
+   -> Subscription  (confidence 0.968, uncertain=False)
+============================================================
+RELOAD PROOF OK — artifact is self-contained and requires no refitting.

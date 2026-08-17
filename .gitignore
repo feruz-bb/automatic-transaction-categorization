@@ -1,0 +1,76 @@
+# ---------------------------------------------------------------------------
+# FIN-001 Automatic Transaction Categorization
+#
+# WHY THIS FILE MATTERS
+# The raw dataset is openly downloadable from Hugging Face (see data/README.md and
+# scripts/download_data.py), so the repository documents where to get it instead of
+# carrying data blobs in Git history. The deployed model bundle IS committed on purpose
+# (Streamlit Community Cloud deploys from GitHub and the app cannot start without it).
+# ---------------------------------------------------------------------------
+
+# --- Raw and processed data: never committed -------------------------------
+data/raw/
+data/processed/
+data/interim/
+data/_rejected_placeholder/
+data/*.csv
+data/*.parquet
+data/*.zip
+# ...but the provenance documentation must stay tracked:
+!data/README.md
+
+# --- Local agent instructions (course rule: CLAUDE.md is local-only) -------
+CLAUDE.md
+AGENTS.md
+
+# --- Python environments and caches ----------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Experiment tracking and model binaries --------------------------------
+mlruns/
+mlartifacts/
+artifacts/*.pkl
+artifacts/*.pt
+artifacts/*.pth
+artifacts/*.onnx
+artifacts/*.bin
+# ...but keep the artifact documentation and any small schema/config files:
+!artifacts/README.md
+!artifacts/*.json
+
+# The model bundle IS committed on purpose so the deployed app can start.
+!artifacts/transaction_categorizer.joblib
+
+# MLflow local tracking database (regenerate with: python -m src.experiments)
+mlflow.db
+
+# --- Secrets ----------------------------------------------------------------
+.env
+*.env
+secrets.*
+*.key
+*.pem
+
+# --- Editors and OS ---------------------------------------------------------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Local scratch ----------------------------------------------------------
+scratch/
+tmp/
+*.log
+
+# --- Course pack files that are not part of the deliverable ----------------
+EXTC2_STUDENT_SHOWCASE_PACK/
+EXTC2_STUDENT_SHOWCASE_PACK.rar
+Claude_Code_Module8_Capstone_Workflow_Guide_UPDATED.docx
+EXTC4_*

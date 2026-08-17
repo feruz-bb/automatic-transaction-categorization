@@ -1,0 +1,45 @@
+{
+  "model_version": "1.0.0",
+  "final_run": "tfidf_word_logreg",
+  "primary_metric": "macro_f1",
+  "test": {
+    "accuracy": 0.9955,
+    "macro_f1": 0.9961,
+    "weighted_f1": 0.9955,
+    "n": 6854,
+    "top3_accuracy": 0.999
+  },
+  "test_seen_merchants": {
+    "accuracy": 0.9958,
+    "macro_f1": 0.9962,
+    "weighted_f1": 0.9958,
+    "n": 6138
+  },
+  "test_unseen_merchants": {
+    "accuracy": 0.993,
+    "macro_f1": 0.9784,
+    "weighted_f1": 0.993,
+    "n": 716
+  },
+  "n_test": 6854,
+  "n_test_unseen_merchant": 716,
+  "classes": [
+    "Education",
+    "Entertainment",
+    "Fees",
+    "Groceries",
+    "Healthcare",
+    "Income",
+    "Insurance",
+    "Mortgage",
+    "Personal Care",
+    "Rent",
+    "Restaurants",
+    "Shopping",
+    "Subscription",
+    "Transfer",
+    "Transportation",
+    "Travel",
+    "Utilities"
+  ]
+}

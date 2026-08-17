@@ -1,0 +1,15 @@
+# FIN-001 — extra dependencies for the transformer-embedding EXPERIMENT only.
+#
+# These are NOT needed to run the app or reload the deployed model. They exist so that
+# notebooks/02_experiments.ipynb and src/experiments.py can reproduce the
+# sentence-embedding + linear-head run that is compared against the TF-IDF model in the
+# Model Gate (reports/model_gate.md, run "embed_minilm_logreg").
+#
+#   pip install -r requirements.txt -r requirements-experiments.txt
+#
+# sentence-transformers pulls torch (~200 MB). Free Streamlit Community Cloud cannot host
+# it comfortably, which is exactly why the deployed model is the TF-IDF pipeline and this
+# stays a documented comparison rather than the production artifact.
+
+sentence-transformers==3.3.1
+torch==2.5.1

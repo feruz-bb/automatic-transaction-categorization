@@ -1,0 +1,26 @@
+{
+  "raw_input": {
+    "description": "One transaction string, e.g. '[debit] PUBLIX 7860 UNIVERSITY LN'. The debit/credit prefix is optional."
+  },
+  "normalizer": "src.features.normalize_description (applied before the pipeline)",
+  "text_column_fed_to_model": "text_norm",
+  "output_classes": [
+    "Education",
+    "Entertainment",
+    "Fees",
+    "Groceries",
+    "Healthcare",
+    "Income",
+    "Insurance",
+    "Mortgage",
+    "Personal Care",
+    "Rent",
+    "Restaurants",
+    "Shopping",
+    "Subscription",
+    "Transfer",
+    "Transportation",
+    "Travel",
+    "Utilities"
+  ]
+}
