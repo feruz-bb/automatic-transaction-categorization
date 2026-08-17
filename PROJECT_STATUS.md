@@ -2,8 +2,9 @@
 
 ## Stage
 
-- **Current stage:** Model Gate (C4) complete; Deployment (C5) built and verified locally; Finalization (C6) evidence in place. Remaining owner step: push to GitHub and deploy to Streamlit Community Cloud.
+- **Current stage:** Repository published to GitHub; Model Gate (C4) complete; Deployment (C5) built and verified locally; Finalization (C6) evidence in place.
 - **Scenario:** FIN-01 — assign bank transactions to spending categories from their description text.
+- **GitHub Repository:** https://github.com/feruz-bb/automatic-transaction-categorization
 
 ## Status
 
@@ -12,11 +13,11 @@
 | C2 Repo | 1, 6 | GREEN | Repo scaffold, README, docs, tests in place |
 | C3 Data Gate | 2 | GREEN | `docs/data_audit.md`, leakage tests pass |
 | C4 Model Gate | 3, 4 | GREEN | `validate_model_gate_evidence.py` exit 0; test macro-F1 0.9961 |
-| C5 Deployment | 5 | LOCAL-VERIFIED | `streamlit run app.py` serves predictions; smoke test + pytest green. Public deploy is the owner's deferred GitHub step |
+| C5 Deployment | 5 | GREEN | `streamlit run app.py` serves predictions; smoke test + pytest green. Repo live on GitHub |
 | C6 Finalization | 6, 7, 8 | GREEN | Rubric matrix, reproduction test, responsible-AI, presentation pack |
 
-- **Next step:** owner creates the GitHub repo, commits milestones, and deploys `app.py` to share.streamlit.io.
-- **Blockers:** none. Deployment is gated only on the owner's GitHub decision ("i will tell").
+- **Next step:** deploy `app.py` to Streamlit Community Cloud (optional / when needed).
+- **Blockers:** none.
 
 ### Debugging milestone — 2026-08-12
 
