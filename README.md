@@ -5,7 +5,7 @@
 [![Macro-F1](https://img.shields.io/badge/Test%20Macro--F1-0.9961-success.svg)](artifacts/metrics.json)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Live demo:** https://YOUR-APP.streamlit.app
+**Live demo:** [Link](https://automatic-transaction-categorization.streamlit.app)
 
 An end-to-end machine-learning project that sorts raw bank-transaction descriptions into **17 spending categories** and serves the model in a Streamlit web app with a confidence score, top-3 alternatives, and a **"needs review"** flag for ambiguous or unfamiliar merchants.
 
